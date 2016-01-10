@@ -74,10 +74,11 @@ char * appendFileExtension(char * fileName)
 void removeComments(FILE * fin, FILE * fout)
 {
   char temp = '\0';
-  char str = (char *)malloc(sizeof(char) * STRING_MAX);
+  char * str = (char *) malloc(sizeof(char) * STRING_MAX);
   while(!feof(fin))
   {
-    print("%s", (getNextStringfin, str));
+    str = getNextString(fin, str);
+    printf("%s", str);
   }
 }
 
