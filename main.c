@@ -105,7 +105,9 @@ void clearStr(char * str)
 
 char * removeC(char * str)
 {
-
+    int * position = (int *)malloc(sizeof(int));
+    *position = 0;
+    
 }
 
 char peakAhead(char * str, int pos)
